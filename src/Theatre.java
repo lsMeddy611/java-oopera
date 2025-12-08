@@ -81,23 +81,23 @@ public class Theatre {
     }
 
     private static void printLebretto(ArrayList<Show> shows, Scanner scanner) {
-        ArrayList<Opera> operasList = new ArrayList<>();
+        ArrayList<MusicalShow> musicalShowsList = new ArrayList<>();
         int counter = 0;
 
-        System.out.println("Выберите номер нужной оперы:");
+        System.out.println("Выберите номер нужной пьесы:");
         for (int i = 0; i < shows.size(); i++) {
             Show currentShow = shows.get(i);
-            if (currentShow.getClass() == Opera.class) {
-                operasList.add((Opera)currentShow);
+            if (currentShow.getClass() == Opera.class || currentShow.getClass() == Ballet.class) {
+                musicalShowsList.add((MusicalShow)currentShow);
                 System.out.println(++counter + " - " +currentShow.getTitle());
             }
         }
-        int operaNubmer = scanner.nextInt();
-        if (operaNubmer < 1 || operaNubmer > operasList.size()) {
+        int musicalShowNubmer = scanner.nextInt();
+        if (musicalShowNubmer < 1 || musicalShowNubmer > musicalShowsList.size()) {
             System.out.println("Такого номера нет в списке");
             return;
         }
-        System.out.println(operasList.get(operaNubmer - 1).getLibrettoText());;
+        System.out.println(musicalShowsList.get(musicalShowNubmer - 1).getLibrettoText());;
     }
 
     private static void printShowDirector(ArrayList<Show> shows, Scanner scanner) {
