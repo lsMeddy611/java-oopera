@@ -1,3 +1,5 @@
+package main.persons;
+
 public class MusicAuthor extends Person{
 
     public MusicAuthor(String name, String surname, GENDER gender) {
@@ -10,6 +12,6 @@ public class MusicAuthor extends Person{
 
     @Override
     public String toString() {
-        return "Автор музыки: " + getName() + " " + getSurname();
+        return "Автор музыки: " + super.toString();
     }
 }

@@ -1,3 +1,8 @@
+package main.shows;
+
+import main.persons.Actor;
+import main.persons.Director;
+
 import java.util.ArrayList;
 
 public class Show {

@@ -1,3 +1,5 @@
+package main.persons;
+
 public class Person {
     public enum GENDER {
         MALE,
@@ -12,6 +14,11 @@ public class Person {
         this.name = name;
         this.surname = surname;
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname();
     }
 
     public String getName() {

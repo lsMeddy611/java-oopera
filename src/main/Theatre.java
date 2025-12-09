@@ -1,3 +1,11 @@
+package main;
+
+import main.persons.*;
+import main.shows.Ballet;
+import main.shows.MusicalShow;
+import main.shows.Opera;
+import main.shows.Show;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

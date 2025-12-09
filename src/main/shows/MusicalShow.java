@@ -1,3 +1,9 @@
+package main.shows;
+
+import main.persons.Actor;
+import main.persons.Director;
+import main.persons.MusicAuthor;
+
 import java.util.ArrayList;
 
 public class MusicalShow extends Show{

@@ -1,3 +1,5 @@
+package main.persons;
+
 import java.util.Objects;
 
 public class Actor extends Person {
@@ -33,12 +35,12 @@ public class Actor extends Person {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(height);
+        return Objects.hash(getName(), getSurname(), height);
     }
 
     @Override
     public String toString() {
-        return getName() + " " + getSurname() + " (" + getHeight() + ")";
+        return super.toString() + " (" + getHeight() + ")";
     }
 }
 

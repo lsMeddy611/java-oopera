@@ -1,4 +1,6 @@
-public class Choreographer extends Person{
+package main.persons;
+
+public class Choreographer extends Person {
 
     public Choreographer(String name, String surname, GENDER gender) {
         super(name, surname, gender);
@@ -8,9 +10,8 @@ public class Choreographer extends Person{
         super(person.getName(), person.getSurname(), person.getGender());
     }
 
-
     @Override
     public String toString() {
-        return "Хориограф: " + getName() + " " + getSurname();
+        return "Хориограф: " + super.toString();
     }
 }

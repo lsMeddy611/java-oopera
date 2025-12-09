@@ -1,3 +1,5 @@
+package main.persons;
+
 public class Director extends Person {
     private int numberOfShows;
 
@@ -13,6 +15,6 @@ public class Director extends Person {
 
     @Override
     public String toString() {
-        return "Режиссёр спектакля: " + getName() + " " + getSurname();
+        return "Режиссёр спектакля: " + super.toString();
     }
 }
